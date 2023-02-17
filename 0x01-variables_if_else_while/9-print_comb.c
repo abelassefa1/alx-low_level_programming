@@ -8,7 +8,9 @@
  */
 
 int main(void)
+
 {
+
 	int s = 0, e = 9;
 
 	while (s <= e)
@@ -18,12 +20,15 @@ int main(void)
 
 	if (s!=e)
 
-		{
+			{
 			putchar(',');
+
 			putchar(' ');
-	}
+		}
 		s++;
 	}
+
+
 	putchar('\n');
 
 	return 0;
