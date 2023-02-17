@@ -1,37 +1,49 @@
 #include <stdio.h>
-#include <stdlib.h>
+/* more headers goes there */
+/* betty style doc for function main goes there */
 /**
- * main - main block
- * Description: prints all single number of base 10
- * starting from 0
- * followed by a new line
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int p = 48, q = 48, y = 48, x = 49;
 
-	while (d < 10)
+	while (p < 58)
 	{
-		c = 0;
-		while (c < 10)
+		while (q < 58)
 		{
-			if (d != c && d < c)
+			while (y < 58)
 			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
+				while (x < 58)
 				{
-					putchar(',');
+					putchar(p);
+					putchar(q);
 					putchar(' ');
+					putchar(y);
+					putchar(x);
+					if (!(p == 57 &&
+						q == 56 &&
+						y == 57 &&
+						x == 57))
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					x++;
 				}
+				y++;
+				x = 48;
 			}
-
-			c++;
+			q++;
+			q = p;
+			x = q + 1;
 		}
-		d++;
+		p++;
+		q = 48;
+		y = p;
+		x = q+ 1;
 	}
 	putchar('\n');
 	return (0);
