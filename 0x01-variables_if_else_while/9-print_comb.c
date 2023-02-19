@@ -1,35 +1,26 @@
 #include <stdio.h>
-
-/* more headers goes there */
-/* betty style doc for function main goes there */
 /**
+ * more headers goes there
+ * betty style doc for function main goes there
  * main - Entry point
- *
  * Return: Always 0 (Success)
  */
 
 int main(void)
-
 {
+       	int s = 0, e = 9;
+       	while (s <= e)
 
-        int s = 0, e = 9;
+    {
+	    putchar(s + '0');
+	    if (s != e)
 
-        while (s <= e)
-
-        {
-                putchar(s + '0');
-
-                if (s != e)
-
-                {
-                        putchar(',');
-
-                        putchar(' ');
-                }
-                s++;
+       	{
+	       	putchar(',');
+	       	putchar(' ');
         }
-
-        putchar('\n');
-
-        return 0;
+	    s++;
+    }
+	putchar('\n');
+	return 0;
 }
