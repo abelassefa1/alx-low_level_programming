@@ -41,4 +41,3 @@ _putchar((prod % 10) + '0');
 _putchar('\n');
 }
 }
-
