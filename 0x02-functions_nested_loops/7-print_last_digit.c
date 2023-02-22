@@ -1,5 +1,4 @@
-#include <limits.h>
-#include <main.h>
+#include "main.h"
 
 /**
  *print_last_digit - Print last digit
@@ -10,14 +9,11 @@
  */
 
 int print_last_digit(int r)
-
 {
 	int lDigit;
-
+	
 	lDigit = r % 10;
-
 	if (lDigit < 0)
-
 	{
 		lDigit *= -1;
 	}
